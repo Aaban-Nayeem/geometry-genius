@@ -3,11 +3,66 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./dist/output.css" />
     <title>Document</title>
   </head>
   <body>
-    
+    <header
+      class="mx-auto mb-8 mt-5 grid w-10/12 grid-cols-2 justify-between rounded bg-[#1090D81A] px-4 py-2"
+    >
+      <div class="">
+        <h3 class="text-3xl font-bold text-[#111107cc]">Interactive</h3>
+        <p class="text-2xl font-medium tracking-tight text-[#11110799]">
+          Geometry Genius
+        </p>
+      </div>
+      <div class="my-auto text-right">
+        <button class="btn btn-primary font-bold text-white">Blog</button>
+      </div>
+    </header>
+    <main class="mx-auto grid w-10/12 grid-cols-4 gap-3">
+      <section>
+        <div class="card space-y-6 bg-base-100 shadow-xl">
+          <figure class="px-10 pt-10">
+            <img
+              src="./images/triangle.png"
+              alt="Triangle"
+              class="rounded-xl"
+            />
+          </figure>
+          <div class="items-center space-y-4 text-center">
+            <h2 class="text-2xl font-bold text-[#414141]">Triangle</h2>
+            <p>Area (A) = 0.5 x b x h</p>
+            <div class="">
+              <input
+                class="mr-1 w-1/5 rounded-md bg-[#1111071a] px-2 py-1 text-black placeholder-black"
+                type="text"
+                placeholder="b"
+              />cm
+              <input
+                class="mr-1 w-1/5 rounded-md bg-[#1111071a] px-2 py-1 text-black placeholder-black"
+                type="text"
+                placeholder="h"
+              />cm
+            </div>
+            <div class="">
+              <button
+                class="mb-4 w-9/12 rounded bg-[#1090D8] py-1 text-lg font-bold text-white"
+              >
+                Calculate
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
     <script src="./src/js/script.js"></script>
   </body>
 </html>
